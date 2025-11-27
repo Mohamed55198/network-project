@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>أجهزة الشبكة - مشروع شبكات الحاسب</title>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700&display=swap" rel="stylesheet">
+<style>
+body {
+  margin: 0;
+  font-family: 'Cairo', sans-serif;
+  background: linear-gradient(to bottom right, #0f2027, #203a43, #2c5364);
+  color: white;
+  text-align: center;
+  overflow-x: hidden;
+}
+
+header {
+  background: rgba(0,0,0,0.6);
+  padding: 20px 0;
+  font-size: 32px;
+  font-weight: bold;
+  color: #fff;
+  border-bottom: 2px solid rgba(255,255,255,0.2);
+}
+
+nav {
+  background: rgba(255,255,255,0.1);
+  padding: 12px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 12px;
+  border-bottom: 2px solid rgba(255,255,255,0.2);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  backdrop-filter: blur(6px);
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 10px 22px;
+  border-radius: 12px;
+  background: rgba(255,255,255,0.15);
+  transition: 0.3s;
+}
+
+nav a:hover {
+  background: #00bcd4;
+  transform: scale(1.05);
+}
+
+.sub-nav {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin: 20px 0;
+}
+
+.sub-nav button {
+  padding: 10px 20px;
+  border-radius: 12px;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+  background: rgba(255,255,255,0.15);
+  color: white;
+  transition: 0.3s;
+}
+
+.sub-nav button:hover {
+  background: #00bcd4;
+  transform: scale(1.05);
+}
+
+.content {
+  max-width: 1000px;
+  margin: auto;
+  padding: 30px 20px 80px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+}
+
+.card {
+  background: rgba(255,255,255,0.08);
+  border-radius: 18px;
+  overflow: hidden;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.3);
+  transition: 0.4s;
+  display: flex;
+  flex-direction: column;
+  text-align: right;
+}
+
+.card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.card h3 {
+  margin: 12px 20px 6px;
+  font-size: 22px;
+  color: #00e5ff;
+}
+
+.card p {
+  margin: 6px 20px 12px;
+  font-size: 16px;
+  color: #e0f7fa;
+  line-height: 1.6;
+}
+
+.card i {
+  font-size: 26px;
+  color: #00bcd4;
+  margin: 10px 20px 0;
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-8px) scale(1.03);
+  background: rgba(255,255,255,0.25);
+  box-shadow: 0 12px 25px rgba(0,0,0,0.5);
+}
+
+.card:hover i {
+  transform: rotate(15deg) scale(1.2);
+  color: #ffea00;
+  text-shadow: 0 0 10px #ffea00;
+}
+
+footer {
+  background: rgba(0,0,0,0.4);
+  color: white;
+  text-align: center;
+  padding: 15px 0;
+  font-weight: bold;
+  border-top: 1px solid rgba(255,255,255,0.2);
+}
+
+@media (max-width: 600px){
+  .card img {
+    height: 180px;
+  }
+}
+</style>
+</head>
+<body>
+
+<header>مشروع شبكات الحاسب</header>
+
+<nav>
+  <a href="index.html">الرئيسية</a>
+  <a href="about.html">عن المشروع</a>
+  <a href="types.html">أنواع الشبكات</a>
+  <a href="components.html">مكونات الشبكات</a>
+  <a href="problems.html">أعطال الشبكات</a>
+  <a href="contact.html">تواصل معنا</a>
+</nav>
+
+<div class="sub-nav">
+  <button onclick="window.location.href='computers.html'">أجهزة الحاسب</button>
+  <button onclick="window.location.href='network-devices.html'">أجهزة الشبكة</button>
+  <button onclick="window.location.href='media.html'">وسائط الاتصال</button>
+  <button onclick="window.location.href='software.html'">البرمجيات</button>
+  <button onclick="window.location.href='resources.html'">الموارد المشتركة</button>
+</div>
+
+<div class="content">
+
+  <div class="card">
+    <img src="img/s2.jpg">
+    <i class="fas fa-exchange-alt"></i>
+    <h3>المبدل (Switch)</h3>
+    <p><strong>الاستخدام:</strong> توصيل الأجهزة داخل الشبكة وتوجيه البيانات بينها.</p>
+    <p><strong>الميزات:</strong> سريع، يدعم VLAN، ذكي في توزيع البيانات.</p>
+    <p><strong>العيوب:</strong> غير مناسب للشبكات الكبيرة جدًا بدون موجه.</p>
+  </div>
+
+  <div class="card">
+    <img src="img/r1.jpg">
+    <i class="fas fa-route"></i>
+    <h3>الموجه (Router)</h3>
+    <p><strong>الاستخدام:</strong> ربط الشبكات المختلفة، توجيه الإنترنت.</p>
+    <p><strong>الميزات:</strong> يدعم الشبكات المختلفة، أمان جيد.</p>
+    <p><strong>العيوب:</strong> سرعة محدودة حسب الأجهزة المتصلة.</p>
+  </div>
+
+  <div class="card">
+    <img src="img/rep1.jpg">
+    <i class="fas fa-project-diagram"></i>
+    <h3>المكرر (Repeater)</h3>
+    <p><strong>الاستخدام:</strong> تقوية الإشارة لتغطي مسافات أطول.</p>
+    <p><strong>الميزات:</strong> سهل التركيب، يحافظ على الإشارة.</p>
+    <p><strong>العيوب:</strong> لا يحسن السرعة، يكرر فقط الإشارة.</p>
+  </div>
+
+  <div class="card">
+    <img src="img/b1.jpg">
+    <i class="fas fa-network-wired"></i>
+    <h3>الجسر (Bridge)</h3>
+    <p><strong>الاستخدام:</strong> ربط شبكتين محليتين مع بعض.</p>
+    <p><strong>الميزات:</strong> فصل حركة المرور، يقلل الازدحام.</p>
+    <p><strong>العيوب:</strong> محدود في عدد الأجهزة.</p>
+  </div>
+
+  <div class="card">
+    <img src="img/srv1.jpg">
+    <i class="fas fa-server"></i>
+    <h3>الخادم (Server)</h3>
+    <p><strong>الاستخدام:</strong> إدارة الشبكة، مشاركة الموارد، استضافة المواقع.</p>
+    <p><strong>الميزات:</strong> أداء قوي، يعمل 24/7.</p>
+    <p><strong>العيوب:</strong> يحتاج صيانة وتبريد دائم.</p>
+  </div>
+
+  <div class="card">
+    <img src="img/gw1.jpg">
+    <i class="fas fa-gateway"></i>
+    <h3>البوابة (Gateway)</h3>
+    <p><strong>الاستخدام:</strong> ربط شبكات مختلفة البروتوكولات.</p>
+    <p><strong>الميزات:</strong> يسمح بالاتصال بين شبكات متنوعة.</p>
+    <p><strong>العيوب:</strong> أبطأ من الموجه في بعض الحالات.</p>
+  </div>
+
+  <div class="card">
+    <img src="img/nic1.jpg">
+    <i class="fas fa-network-wired"></i>
+    <h3>بطاقة واجهة الشبكة (NIC)</h3>
+    <p><strong>الاستخدام:</strong> ربط جهاز الحاسب بالشبكة.</p>
+    <p><strong>الميزات:</strong> سريع، يدعم معظم الشبكات.</p>
+    <p><strong>العيوب:</strong> لا يمكن تغييرها إلا ببطاقة جديدة.</p>
+  </div>
+
+</div>
+
+<footer>
+  مشروع التخرج — منصة شبكات الحاسب © 2026
+</footer>
+
+</body>
+</html>

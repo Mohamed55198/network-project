@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>تواصل معنا - شبكات الحاسب</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Cairo', sans-serif;
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(to bottom right, #0f2027, #203a43, #2c5364);
+      color: white;
+    }
+
+    header {
+      background: rgba(0,0,0,0.5);
+      padding: 20px 0;
+      text-align: center;
+      font-size: 28px;
+      font-weight: bold;
+      backdrop-filter: blur(6px);
+      border-bottom: 2px solid rgba(255,255,255,0.2);
+    }
+
+    nav {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 12px;
+      background: rgba(255, 255, 255, 0.1);
+      padding: 12px;
+      border-bottom: 2px solid rgba(255,255,255,0.2);
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      padding: 8px 18px;
+      border-radius: 10px;
+      background: rgba(255, 255, 255, 0.15);
+      transition: 0.3s all ease;
+    }
+
+    nav a:hover {
+      background: #00bcd4;
+      transform: scale(1.05);
+    }
+
+    .contact-section {
+      max-width: 800px;
+      margin: 40px auto;
+      background: rgba(0,0,0,0.5);
+      border-radius: 15px;
+      padding: 30px;
+      text-align: center;
+      backdrop-filter: blur(6px);
+      box-shadow: 0 8px 25px rgba(0,0,0,0.5);
+    }
+
+    .contact-section h2 {
+      color: #00bcd4;
+      margin-bottom: 20px;
+      font-size: 2em;
+    }
+
+    .contact-links {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 15px;
+      margin-bottom: 30px;
+    }
+
+    .contact-links a {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      padding: 14px 25px;
+      border-radius: 50px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: 0.3s all ease;
+      color: white;
+      font-size: 18px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.5);
+    }
+
+    .contact-links a:hover {
+      transform: scale(1.1) rotate(2deg);
+      box-shadow: 0 8px 25px rgba(0,0,0,0.7);
+    }
+
+    .whatsapp { background-color: #25D366; }
+    .facebook { background-color: #1877F2; }
+    .email { background-color: #EA4335; }
+    .telegram { background-color: #0088cc; }
+    .instagram { background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%); }
+
+    .contact-form {
+      text-align: right;
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+      width: 100%;
+      padding: 12px;
+      margin-bottom: 15px;
+      border-radius: 8px;
+      border: none;
+      font-size: 1em;
+      transition: 0.3s all ease;
+    }
+
+    .contact-form input:focus,
+    .contact-form textarea:focus {
+      outline: none;
+      box-shadow: 0 0 12px #00bcd4;
+      transform: scale(1.02);
+    }
+
+    .contact-form button {
+      background-color: #00bcd4;
+      color: white;
+      border: none;
+      padding: 14px 30px;
+      border-radius: 10px;
+      font-size: 1.1em;
+      cursor: pointer;
+      font-weight: bold;
+      transition: 0.3s all ease;
+    }
+
+    .contact-form button:hover {
+      background-color: #0097a7;
+      transform: scale(1.08) rotate(-1deg);
+      box-shadow: 0 8px 20px rgba(0,0,0,0.6);
+    }
+
+    footer {
+      text-align: center;
+      padding: 15px 0;
+      margin-top: 40px;
+      font-weight: bold;
+      background: rgba(0,0,0,0.5);
+      border-top: 2px solid rgba(255,255,255,0.2);
+    }
+  </style>
+</head>
+<body>
+  <header>مشروع شبكات الحاسب</header>
+
+  <nav>
+    <a href="index.html">الرئيسية</a>
+    <a href="about.html">عن المشروع</a>
+    <a href="types.html">أنواع الشبكات</a>
+    <a href="components.html">مكونات الشبكات</a>
+    <a href="problems.html">أعطال الشبكات</a>
+    <a href="contact.html">تواصل معنا</a>
+  </nav>
+
+  <section class="contact-section">
+    <h2>📞 تواصل معنا بسهولة</h2>
+    <p>يمكنك التواصل معنا لأي استفسار أو مساعدة حول شبكات الحاسب.</p>
+
+    <div class="contact-links">
+      <a class="whatsapp" href="https://wa.me/201115445582" target="_blank">
+        <i class="bi bi-whatsapp"></i> واتساب
+      </a>
+
+      <a class="email" href="mailto:mabdullatif852@gmail.com?subject=استفسار&body=السلام عليكم" target="_blank">
+        <i class="bi bi-envelope-fill"></i> إيميل
+      </a>
+
+      <a class="facebook" href="https://m.me/16zvqxTKiY" target="_blank">
+        <i class="bi bi-facebook"></i> فيسبوك
+      </a>
+
+      <a class="telegram" href="https://t.me/MohamedAbdullatif55" target="_blank">
+        <i class="bi bi-telegram"></i> تليجرام
+      </a>
+
+      <a class="instagram" href="https://www.instagram.com/_mohamedabdullatif_/" target="_blank">
+        <i class="bi bi-instagram"></i> إنستجرام
+      </a>
+    </div>
+
+    <form class="contact-form">
+      <h3>📩 أرسل لنا رسالة مباشرة</h3>
+      <input type="text" placeholder="الاسم الكامل" required />
+      <input type="email" placeholder="البريد الإلكتروني" required />
+      <textarea rows="5" placeholder="اكتب رسالتك هنا..." required></textarea>
+      <button type="submit">إرسال الرسالة</button>
+    </form>
+  </section>
+
+  <footer>
+    مشروع التخرج — منصة شبكات الحاسب © 2026
+  </footer>
+</body>
+</html>

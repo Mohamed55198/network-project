@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>الموارد المشتركة - مشروع شبكات الحاسب</title>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700&display=swap" rel="stylesheet">
+<style>
+body {
+  margin: 0;
+  font-family: 'Cairo', sans-serif;
+  background: linear-gradient(to bottom right, #0f2027, #203a43, #2c5364);
+  color: white;
+  text-align: center;
+  overflow-x: hidden;
+}
+header {
+  background: rgba(0,0,0,0.5);
+  padding: 20px 0;
+  font-size: 30px;
+  font-weight: bold;
+  color: #fff;
+  border-bottom: 2px solid rgba(255,255,255,0.2);
+}
+nav {
+  background: rgba(255,255,255,0.1);
+  padding: 12px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 12px;
+  border-bottom: 2px solid rgba(255,255,255,0.2);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  backdrop-filter: blur(6px);
+}
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 10px 20px;
+  border-radius: 12px;
+  background: rgba(255,255,255,0.15);
+  transition: 0.3s;
+}
+nav a:hover {
+  background: #00bcd4;
+  transform: scale(1.05);
+}
+.sub-nav {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin: 25px 0;
+}
+.sub-nav button {
+  padding: 10px 18px;
+  border-radius: 10px;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+  background: rgba(255,255,255,0.15);
+  color: white;
+  transition: 0.3s;
+}
+.sub-nav button:hover {
+  background: #00bcd4;
+  transform: scale(1.05);
+}
+.content {
+  padding: 30px 20px 100px;
+  max-width: 900px;
+  margin: auto;
+}
+.content h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
+  border-bottom: 2px solid #00bcd4;
+  display: inline-block;
+  padding-bottom: 6px;
+}
+.card {
+  background: rgba(255,255,255,0.08);
+  margin: 20px 0;
+  padding: 20px 25px;
+  border-radius: 15px;
+  text-align: right;
+  transition: 0.4s;
+  opacity: 0;
+  transform: translateY(30px);
+  animation: slideIn 0.6s forwards;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+.card img {
+  width: 140px;
+  height: 100px;
+  border-radius: 14px;
+  object-fit: contain;
+  border: 3px solid #00bcd4;
+  transition: transform 0.3s, border-color 0.3s, box-shadow 0.3s;
+}
+.card:hover img {
+  transform: scale(1.15);
+  border-color: #ffea00;
+  box-shadow: 0 0 15px #ffea00;
+}
+.card:hover {
+  background: rgba(255,255,255,0.25);
+  transform: translateY(-8px) scale(1.03);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+}
+.card i {
+  font-size: 28px;
+  color: #00bcd4;
+  transition: all 0.3s;
+}
+.card:hover i {
+  transform: rotate(15deg) scale(1.2);
+  color: #ffea00;
+  text-shadow: 0 0 10px #ffea00;
+}
+.card h3 {
+  margin: 0;
+  font-size: 22px;
+  color: #00e5ff;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.3);
+}
+.card p {
+  margin: 6px 0;
+  font-size: 17px;
+  color: #e0f7fa;
+  line-height: 1.7;
+}
+footer {
+  background: rgba(0,0,0,0.4);
+  color: white;
+  text-align: center;
+  padding: 15px 0;
+  font-weight: bold;
+  border-top: 1px solid rgba(255,255,255,0.2);
+}
+@keyframes slideIn {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+</style>
+</head>
+<body>
+
+<header>مشروع شبكات الحاسب</header>
+
+<nav>
+  <a href="index.html">الرئيسية</a>
+  <a href="about.html">عن المشروع</a>
+  <a href="types.html">أنواع الشبكات</a>
+  <a href="components.html">مكونات الشبكات</a>
+  <a href="problems.html">أعطال الشبكات</a>
+  <a href="contact.html">تواصل معنا</a>
+</nav>
+
+<div class="sub-nav">
+  <button onclick="window.location.href='computers.html'">أجهزة الحاسب</button>
+  <button onclick="window.location.href='network-devices.html'">أجهزة الشبكة</button>
+  <button onclick="window.location.href='media.html'">وسائط الاتصال</button>
+  <button onclick="window.location.href='software.html'">البرمجيات</button>
+  <button onclick="window.location.href='resources.html'">الموارد المشتركة</button>
+</div>
+
+<div class="content">
+  <h2>الموارد المشتركة</h2>
+
+  <div class="card" style="animation-delay: 0s;">
+    <img src="img/shared-printer.jpg" alt="الطابعات المشتركة">
+    <div>
+      <h3>1- الطابعات المشتركة</h3>
+      <p><strong>الاستخدام:</strong> مشاركة الطابعة بين جميع أجهزة الشبكة.</p>
+      <p><strong>الميزات:</strong> توفير التكلفة والوقت، مناسب للمكاتب.</p>
+      <p><strong>العيوب:</strong> أحيانًا تبطئ الشبكة إذا كانت كثيرة الاستخدام.</p>
+    </div>
+  </div>
+
+  <div class="card" style="animation-delay: 0.1s;">
+    <img src="img/shared-server.jpg" alt="الخوادم المشتركة">
+    <div>
+      <h3>2- الخوادم المشتركة</h3>
+      <p><strong>الاستخدام:</strong> حفظ ومشاركة الملفات، إدارة قواعد البيانات.</p>
+      <p><strong>الميزات:</strong> تحكم مركزي، أمان عالي.</p>
+      <p><strong>العيوب:</strong> يحتاج صيانة وتبريد دائم.</p>
+    </div>
+  </div>
+
+  <div class="card" style="animation-delay: 0.2s;">
+    <img src="img/shared-nas.jpg" alt="وحدات التخزين المشتركة">
+    <div>
+      <h3>3- وحدات التخزين المشتركة (NAS)</h3>
+      <p><strong>الاستخدام:</strong> مشاركة الملفات والنسخ الاحتياطي بين الأجهزة.</p>
+      <p><strong>الميزات:</strong> سعة كبيرة، وصول متعدد للمستخدمين.</p>
+      <p><strong>العيوب:</strong> يحتاج صيانة وأمان جيد.</p>
+    </div>
+  </div>
+
+  <div class="card" style="animation-delay: 0.3s;">
+    <img src="img/shared-fax.jpg" alt="أجهزة الفاكس المشتركة">
+    <div>
+      <h3>4- أجهزة الفاكس المشتركة</h3>
+      <p><strong>الاستخدام:</strong> إرسال واستقبال المستندات الورقية عبر الشبكة.</p>
+      <p><strong>الميزات:</strong> مشاركة واحدة على الشبكة.</p>
+      <p><strong>العيوب:</strong> استخدام محدود حاليًا، يحتاج خطوط هاتف.</p>
+    </div>
+  </div>
+
+  <div class="card" style="animation-delay: 0.4s;">
+    <img src="img/shared-cloud.jpg" alt="الخدمات السحابية الداخلية">
+    <div>
+      <h3>5- الخدمات السحابية الداخلية</h3>
+      <p><strong>الاستخدام:</strong> مشاركة التطبيقات والملفات داخل الشبكة أو بين الفروع.</p>
+      <p><strong>الميزات:</strong> وصول سريع، يدعم العمل الجماعي.</p>
+      <p><strong>العيوب:</strong> يحتاج صيانة أمان وحماية قوية.</p>
+    </div>
+  </div>
+
+</div>
+
+<footer>
+  مشروع التخرج — منصة شبكات الحاسب © 2026
+</footer>
+
+</body>
+</html>

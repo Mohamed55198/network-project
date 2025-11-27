@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>أنواع الشبكات - مشروع شبكات الحاسب</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <style>
+    body {
+      margin: 0;
+      font-family: "Cairo", sans-serif;
+      background: linear-gradient(to bottom right, #0f2027, #203a43, #2c5364);
+      color: white;
+      text-align: center;
+      overflow-x: hidden;
+    }
+
+    header {
+      background: rgba(0, 0, 0, 0.5);
+      backdrop-filter: blur(6px);
+      padding: 20px 0;
+      font-size: 30px;
+      font-weight: bold;
+      border-bottom: 2px solid rgba(255,255,255,0.2);
+    }
+
+    nav {
+      background: rgba(255,255,255,0.1);
+      padding: 12px;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 12px;
+      border-bottom: 2px solid rgba(255,255,255,0.2);
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      padding: 10px 20px;
+      border-radius: 12px;
+      background: rgba(255,255,255,0.15);
+      transition: 0.3s;
+    }
+
+    nav a:hover {
+      background: #00bcd4;
+      transform: scale(1.05);
+    }
+
+    .content {
+      padding: 50px 20px;
+      max-width: 1000px;
+      margin: auto;
+      line-height: 1.8;
+      font-size: 20px;
+      animation: fadeIn 1s ease-in-out;
+    }
+
+    .content h2 {
+      font-size: 30px;
+      margin-bottom: 25px;
+      text-align: center;
+      border-bottom: 2px solid #00bcd4;
+      display: inline-block;
+      padding-bottom: 5px;
+    }
+
+    .network-types {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 25px;
+      margin-top: 40px;
+    }
+
+    .type-card {
+      background: rgba(255,255,255,0.1);
+      border-radius: 15px;
+      padding: 25px;
+      width: 260px;
+      text-align: center;
+      transition: 0.3s;
+    }
+
+    .type-card i {
+      font-size: 45px;
+      color: #00bcd4;
+      margin-bottom: 15px;
+    }
+
+    .type-card h3 {
+      font-size: 22px;
+      margin-bottom: 10px;
+      color: #00e0ff;
+    }
+
+    .type-card p {
+      font-size: 18px;
+      color: #f0f0f0;
+      line-height: 1.6;
+    }
+
+    .type-card:hover {
+      background: #00bcd4;
+      color: white;
+      transform: translateY(-5px) scale(1.05);
+    }
+
+    footer {
+      background: rgba(0,0,0,0.4);
+      color: white;
+      text-align: center;
+      padding: 15px 0;
+      font-weight: bold;
+      border-top: 1px solid rgba(255,255,255,0.2);
+      margin-top: 50px;
+    }
+
+    @keyframes fadeIn {
+      from {opacity: 0;}
+      to {opacity: 1;}
+    }
+  </style>
+</head>
+<body>
+
+<header>مشروع شبكات الحاسب</header>
+
+<nav>
+  <a href="index.html">الرئيسية</a>
+  <a href="about.html">عن المشروع</a>
+  <a href="types.html">أنواع الشبكات</a>
+  <a href="components.html">مكونات الشبكات</a>
+  <a href="problems.html">أعطال الشبكات</a>
+  <a href="contact.html">تواصل معنا</a>
+</nav>
+
+<div class="content">
+  <h2>أنواع الشبكات</h2>
+  <p>تُصنف شبكات الحاسب حسب المساحة الجغرافية والاستخدام كما يلي:</p>
+
+  <div class="network-types">
+    <div class="type-card">
+      <i class="fas fa-house-signal"></i>
+      <h3>LAN</h3>
+      <p>شبكة محلية صغيرة مثل شبكة المنزل أو المكتب، تتميز بسرعتها العالية داخل نطاق محدود.</p>
+    </div>
+
+    <div class="type-card">
+      <i class="fas fa-globe"></i>
+      <h3>WAN</h3>
+      <p>شبكة واسعة تغطي مناطق كبيرة مثل الإنترنت، وتربط بين شبكات محلية في مدن أو دول مختلفة.</p>
+    </div>
+
+    <div class="type-card">
+      <i class="fas fa-city"></i>
+      <h3>MAN</h3>
+      <p>شبكة متوسطة تغطي مدينة كاملة أو منطقة محددة، وتربط شبكات LAN متعددة.</p>
+    </div>
+
+    <div class="type-card">
+      <i class="fas fa-mobile-screen"></i>
+      <h3>PAN</h3>
+      <p>شبكة شخصية تُستخدم لربط الأجهزة القريبة مثل الهاتف، اللابتوب، والسماعات اللاسلكية.</p>
+    </div>
+
+    <div class="type-card">
+      <i class="fas fa-shield-halved"></i>
+      <h3>VPN</h3>
+      <p>شبكة افتراضية آمنة تُستخدم لتبادل البيانات عبر الإنترنت بشكل مشفر ومحمي.</p>
+    </div>
+  </div>
+</div>
+
+<footer>
+  مشروع التخرج — منصة شبكات الحاسب © 2026
+</footer>
+
+</body>
+</html>
